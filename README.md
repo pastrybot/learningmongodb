@@ -1,4 +1,12 @@
 ### MongoDB-Workshop
+1) Clone this repo
+`git clone https://github.com/fresh5447/MongoDB-Workshop.git`
+2) Create your own repo
+3) Point this codebase to your new repo
+`git set-url origin 'someNewUrl'`
+4) Update the READme as you go, and commit your code.
+
+---
 
 __Relational DBs__
 
@@ -292,3 +300,15 @@ More queries
 `db.movieDetails.find({ rated: "PG-13" }).count();`
 `db.movieDetails.find({ rated: "PG-13", year: 2009 }).count();`
 Since they are both inside of the same query selector, the fields implicitly use `&&`
+
+----
+
+#### Mongoose Driver
+
+__Benefits__
+
+* Easier database transactions
+
+* Consistent database with schemas
+
+* Fake relationships with population
