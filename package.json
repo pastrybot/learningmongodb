@@ -1,0 +1,22 @@
+{
+  "name": "mongows",
+  "version": "1.0.0",
+  "description": "__Relational DBs__",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fresh5447/MongoDB-Workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fresh5447/MongoDB-Workshop/issues"
+  },
+  "homepage": "https://github.com/fresh5447/MongoDB-Workshop#readme",
+  "dependencies": {
+    "mongodb": "^2.2.24"
+  }
+}
