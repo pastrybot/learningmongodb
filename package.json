@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/fresh5447/MongoDB-Workshop#readme",
   "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
     "mongodb": "^2.2.24"
   }
 }
