@@ -2,12 +2,11 @@
 
 __Relational DBs__
 
-Traditiaoony databases have been mostly relationlonlal databases.
+Historically databases have been mostly relational or SQL databases.
 
-Relational DBs store data very similar to an excel sheet with columns and rows.
+This means they store data in the format of tables and records.
 
-For example, this is what a table might look like for a customers.
-
+A table is how you desribe a piece of data, for example:
 
 | fName        | lName          | id  |
 | ------------- |:-------------:| -----:|
@@ -16,14 +15,26 @@ For example, this is what a table might look like for a customers.
 | "Sandra" | "Neat"      |    12341 |
 
 
-The columns descibbe the property of the data, and each row represents an actual record.
-Relational DBs also implement Structured Query Language, which is a way of accessing, and updating our database.
+You can think of relational databases just like excel sheets. A table or excel page describes what a piece of data will contain.
+
+A specific row in the table is a record.
+
+ie { "Doug"      | "Walter" | 12e120  }
+
+Additionaly tables may have relationships, or ways of relating peices of data together. We will learn how to do this in another section of the course but to learn more about it please read the 'types of associations' section of [this guide](http://guides.rubyonrails.org/association_basics.html)
+
+
+
+Relational databases also use Structured Query Language, which is a way of accessing, and updating our database. We will learn SQL in a couple of weeks
+
+
+----
 
 __Non-Relational DBS__
 
 Non relational DBs are much less structured then Relational DBs. Instead of having tightly couple tables, we structure our data in 'JSON'
 
-Previsouly a specifc data object was known as a record, in NR dbs a piece of data is a document:
+Previously a specific data object was known as a `record`, in NR dbs a piece of data is a document:
 
 ```
 var customer = {
@@ -32,25 +43,19 @@ var customer = {
  id: 3122
  }
 ```
- If you are a javascript developer you are very familiaer with this data structure.
- 
+ If you are a javascript developer you are very familiar with this data structure.
+
  A bunch of documents together is called a `collection` , which is roughly the equivalent to a table.
- 
+
  ----
-  
+
  #### MongoDB
 
-Is a documnet driven database in which all of the data is stored in JSON format.
-Does not rely on table joins, therefor it is much more flexible. Supports Aigle, scalability, and performance.
-MongoDB is very scalable. 
-Much more difficult in relational.
+Is a document driven database in which all of the data is stored in JSON format.
 
+Does not rely on table joins, therefor it is much more flexible.
 
-
-
-
-
-
+Supports agile software development, scalability, and performance.
 
 
 ----
@@ -63,7 +68,7 @@ MongoDB
 MongoShell
 Driver (handles communcation to DB)
 
-[logo]: http://i61.photobucket.com/albums/h79/bigskycodeacademy/unspecified_zpsduke3mnn.png "Logo Title Text 2"
+[logo]:http://i61.photobucket.com/albums/h79/bigskycodeacademy/unspecified_zpsduke3mnn.png "Logo Title Text 2"
 
 
 ----
@@ -81,7 +86,7 @@ key values
   seperated with colons
   fields seperated with comma
   start and close json with curly braces
-  
+
 value types available
 String,
 Number,
@@ -101,8 +106,8 @@ In this object we have serveral types of nesting to consider.
     "title" : "Lead Business Editor"
   },
   "published" : true,
-  "tags" : [ 
-    "AAPL", 
+  "tags" : [
+    "AAPL",
     { "name" : "city", "value" : "Cupertino" },
     [ "Electronics", "Computers" ]
   ]
@@ -124,7 +129,7 @@ MongoDB drivers send and receive data as BSON, and when it is written to the DB 
 
 The drives actually map BSON to JSON when you recall the data.
 
-BSON is 
+BSON is
 Light
 Traversable (support the variety of operations neccessary to writing, reading, etc...)
 Effiecient
@@ -153,7 +158,7 @@ Launch the shell
 
 `help` to see a list of commands avaialble
 
-Note there are commands for show dbs and show collections. 
+Note there are commands for show dbs and show collections.
 Collections are organized into databases.
 
 Create a DB called Video, that contains a collection for movies, tv, and actors.
@@ -271,7 +276,7 @@ db.moviesScratch.insertMany(
         }
     ],
     {
-        "ordered": false 
+        "ordered": false
     }
 );
 ```
@@ -282,4 +287,3 @@ Since they are both inside of the same query selector, the fields implicityly us
 
 ----
 #### Mongodb Schema Design
-
