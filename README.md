@@ -226,3 +226,7 @@ MongoClient.connect(url, function(err, db) {
 });
 
 ```
+
+Let's put it all together using express and ejs
+Checkout `expressServer.js`
+
