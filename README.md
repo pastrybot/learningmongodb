@@ -62,11 +62,15 @@ Supports agile software development, scalability, and performance.
 
 #### Node Application Overview
 
-Clents
+Clients
+
 Node (app)
+
 MongoDB
+
 MongoShell
-Driver (handles communcation to DB)
+
+Driver (handles communication to DB)
 
 [logo]:http://i61.photobucket.com/albums/h79/bigskycodeacademy/unspecified_zpsduke3mnn.png "Logo Title Text 2"
 
@@ -83,18 +87,18 @@ Next create your directory
 #### JSON
 key values
   keys must be strings
-  seperated with colons
-  fields seperated with comma
-  start and close json with curly braces
+  separated with colons
+  fields separated with comma
+  start and close separated with curly braces
 
-value types available
-String,
-Number,
-Boolean,
-Array
-Object
+__value types available__
+ * String
+ * Number,
+ * Boolean,
+ * Array
+ * Object
 
-In this object we have serveral types of nesting to consider.
+In this object we have several types of nesting to consider.
 
 ```json
 {
@@ -192,6 +196,9 @@ We can pass in `query` operators into the find command, to find specifc items.
 optional: hasNext() && next
 
 ----
+#### RoboMongo
+
+---
 #### Mongo & Node
 
 make sure node is installed
@@ -283,7 +290,4 @@ db.moviesScratch.insertMany(
 More queries
 `db.movieDetails.find({ rated: "PG-13" }).count();`
 `db.movieDetails.find({ rated: "PG-13", year: 2009 }).count();`
-Since they are both inside of the same query selector, the fields implicityly use `&&`
-
-----
-#### Mongodb Schema Design
+Since they are both inside of the same query selector, the fields implicitly use `&&`
