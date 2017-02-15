@@ -72,7 +72,8 @@ MongoShell
 
 Driver (handles communication to DB)
 
-[logo]:http://i61.photobucket.com/albums/h79/bigskycodeacademy/unspecified_zpsduke3mnn.png "Logo Title Text 2"
+
+![alt text](http://i61.photobucket.com/albums/h79/bigskycodeacademy/unspecified_zpsduke3mnn.png "Logo Title Text 1")
 
 
 ----
